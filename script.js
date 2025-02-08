@@ -51,6 +51,9 @@ guess.addEventListener("click", () => {
     }else if (turnsCount === 0){
         result.textContent = "Out of turns :("
         guess.textContent = "Restart";
+        for (let i = 0; i < randomColors.length; i++){
+            document.getElementById(`color-${i + 1}`).style.backgroundColor = randomColors[i];
+        }
     } else {
         turnsCount -= 1;
         turns.innerText = turnsCount;
