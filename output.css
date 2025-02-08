@@ -548,11 +548,38 @@
   .col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .col-start-1 {
+    grid-column-start: 1;
+  }
+  .col-end-3 {
+    grid-column-end: 3;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .mx-auto {
     margin-inline: auto;
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .block {
     display: block;
@@ -596,6 +623,9 @@
   .h-screen {
     height: 100vh;
   }
+  .min-h-8 {
+    min-height: calc(var(--spacing) * 8);
+  }
   .w-\[20px\] {
     width: 20px;
   }
@@ -613,6 +643,12 @@
   }
   .w-\[100px\] {
     width: 100px;
+  }
+  .w-\[5000px\] {
+    width: 5000px;
+  }
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-screen {
     width: 100vw;
@@ -639,6 +675,9 @@
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -657,11 +696,17 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .items-stretch {
     align-items: stretch;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -735,8 +780,14 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-white {
     color: var(--color-white);
@@ -824,6 +875,11 @@
   .md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:gap-12 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 12);
     }
   }
   .md\:border-2 {

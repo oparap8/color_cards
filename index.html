@@ -6,9 +6,15 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="h-screen w-screen bg-gray-400 flex justify-center items-center">
-  <div class="h-[100%] w-[100%] md:h-auto md:w-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 md:grid-cols-4 md:gap-8 md:border-2 md:border-gray-700 px-4  md:px-8 py-4 rounded-xl gap-4">
+  <div id="container" class="h-[100%] w-[100%] md:h-auto md:w-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 md:grid-cols-4 md:gap-12 md:border-2 md:border-gray-700 px-4  md:px-8 py-4 rounded-xl gap-4">
+    <div class="col-span-2 md:col-span-4 flex justify-end items-center">
+        <h1>Turns left:</h1>
+        <div id="turns" class="ml-2 bg-gray-500 text-white px-4 py-1 rounded">0</div>
+    </div>
     <div class="flex flex-col justify-center items-center">
-        <div id="color-1" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x"></div>
+        <div id="color-1" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x">
+
+        </div>
         <!-- ROYGBIV -->
         <select name="" id="answer-1" class="bg-white rounded-lg border-1 border-gray-500 shadow-2xl">
             <option value=""></option>
@@ -22,7 +28,9 @@
         </select>
     </div>
     <div class="flex flex-col justify-center items-center">
-        <div id="color-2" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x"></div>
+        <div id="color-2" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x">
+
+        </div>
         <!-- ROYGBIV -->
         <select name="" id="answer-2" class="bg-white rounded-lg border-1 border-gray-500 shadow-2xl">
             <option value=""></option>
@@ -36,7 +44,9 @@
         </select>
     </div>
     <div class="flex flex-col justify-center items-center">
-        <div id="color-3" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x"></div>
+        <div id="color-3" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x">
+
+        </div>
         <!-- ROYGBIV -->
         <select name="" id="answer-3" class="bg-white rounded-lg border-1 border-gray-500 shadow-2xl">
             <option value=""></option>
@@ -50,7 +60,9 @@
         </select>
     </div>
     <div class="flex flex-col justify-center items-center">
-        <div id="color-4" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x"></div>
+        <div id="color-4" class="h-[150px] w-[100%] md:h-[200px] md:w-[100px] bg-white border-1 border-gray-500 mb-6 rounded-2xl shadow-2x">
+            
+        </div>
             <!-- ROYGBIV -->
             <select name="" id="answer-4" class="bg-white rounded-lg border-1 border-gray-500">
                 <option value=""></option>
@@ -66,16 +78,16 @@
 
 
 <!-- GUESS -->
-    <div id="guess" class="flex justify-center items-center col-span-2 md:col-span-4">
-        <div class="inline-flex items-center justify-center mx-auto bg-blue-700 hover:bg-blue-400 text-white px-4 py-1 rounded">
-            Guess
-        </div>
+    <div id="guess" class="flex justify-center items-center col-span-2 md:col-span-4 mx-auto bg-blue-700 hover:bg-blue-400 cursor-pointer text-white px-4 py-1 rounded">
+        Start
     </div>
     <div class="flex justify-center items-center col-span-2 md:col-span-4">
-        <div id="result" class="inline-flex items-center justify-center mx-auto bg-gray-500 text-white px-4 rounded w-[80%] h-8">
+        <div id="result" class="inline-flex items-center justify-center mx-auto bg-gray-500 text-white px-4 py-2 text-center text-blackrounded w-[80%] min-h-8">
             
         </div>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
