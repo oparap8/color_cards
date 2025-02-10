@@ -16,7 +16,7 @@ function generateColor(){
 }
 
 
-let turnsCount = 7;
+let turnsCount = 5;
 let randomColors = [];
 
 guess.addEventListener("click", () => {
@@ -37,7 +37,7 @@ guess.addEventListener("click", () => {
         console.log(randomColors);
     }else if (guess.textContent.trim() === "Restart") {
         guess.textContent = "Guess";
-        turnsCount = 7;
+        turnsCount = 5;
         turns.innerText = turnsCount;
         randomColors = [];
         for (let elementColor of elementColors) {
